@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-a"></i>
+                    <div class="logo-text">Angelie</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home" style="color: white">Home</a></li>
+                        <li><a href="#About" style="color: white">About</a></li>
+                        <li><a href="#portfolio" style="color:white;">Portfolio</a></li>
+                        <li><a href="#skills" style="color:white;">Skills</a></li>
+                        <li><a href="#Contact" style="color:white;">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="container">
+             <div class="hero-pic">
+                <img src="me.jpeg" alt="profile pic">
+                 </div>
+            <div class="hero-text">
+                <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                <h1>Angelie Q. Larioque</h1>
+                <p> Hello! My name is Angelie Q. Larioque. Im 20 years old. I am a BS Computer Science student with a passion for Cloud Engineering.
+                        Check out my projects & activities, and feel free to reach out if you want to connect! </p>  
+            <div class="btn-group">
+                       <a href="resume.pdf" class="btn active">Download CV</a>
+                    </div>
+            <div class="social">
+                        <a href="https://www.facebook.com/angelie.larioque."><i class="fa-brands fa-facebook"></i></a>               
+                        <a href="https://www.instagram.com/mariaangelie.444"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/@mariaangelie20"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                 </div>
+            </div>            
+        </div>
+     </div>
+     
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+       
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","UX Designer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>   
+    <div class="group-container" id="About">
+        <br>         
+        <br> 
+        <br>
+        <br>          
+        <div style="margin-top: 3px;">
+            <h1 style="font-size: xxx-large;text-align: center; color: #6c3082  ;"> About Me & My Hobbies</h1>
+            <p style="color:white;"> Im currently taking 
+            Bachelor of Science in Computer Science, throughout the year 
+            <p style="color: white;">i learned java, mysql, python and creating a simple game but i do enjoy UI/UX </p>
+            <p style="color: white;">these are design disciplines that are used to create a product or website that is enjoyable for the user</p>
+<br>         
+    <br> 
+            <div class="content">
+                <img src="vb.jpeg" alt="Volleyball" width="300px">
+                <div class="text">
+                    <pre class="custom-pre">
+I absolutely love playing volleyball, because it helps me to be physically fit
+ and ever since highschool I'm joining intrams. It fosters camaraderie and communication
+  among players, as success relies heavily on collaboration.
+                    </pre>
+            </div>
+<br>
+    <br>
+            <div class="content">
+                <img src="sabrina.jpeg" alt="Song" width="300px">
+                <div class="text">
+                    <pre class="custom-pre">
+I love Sabrina Carpenter's "Short n Sweet" album, which showcases her growth as an artist. The songs blend catchy melodies
+with relatable lyrics, exploring themes of love, self-discovery, and vulnerability.
+                    </pre>
+            </div>
+<br>
+    <br>
+            <div class="content">
+                <img src="LR.jpeg" alt="Kdrama" width="300px">
+                <div class="text">
+                    <pre class="custom-pre">
+I love to watch Kdrama that has Romcom, Thriller, Sci-Fi, and Action. When I'm watching Kdrama
+I feel like I can also feel their emotions, and I get comfort and satisfaction from Kdrama.
+                            </pre>
+                    </div>
+<br>
+    <br>               
+        <br>
+            <br>
+            <br>
+        <br>               
+    <br>
+<br>                        
+<section>
+    <div class="portfolio" id="portfolio">
+        <h1>My <span style="font-size: xxx-large;text-align: center; color: #6c3082  ;">Portfolio</span></h1>
+        <div class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="fishhop.jpeg.jpg" alt="project 1">
+            <h3>Fish hop</h3>
+            <p>Fish Hop Sea Dive Game (Swim smart or Die) is a game that is so addictive to play.
+                Players tap the screen to make the fish swim.</p>
+
+
+            <a href="https://github.com/gel-hubdotcom/Fish-hops" class="btn">View Project</a>
+        </div>
+        <div class="portfolio-item">
+            <img src="checklist.jpeg" alt="project 2">
+            <h3>Student Checklist</h3>
+            <p>This is the website checklist I made to allow you to search your grades, subjects and professors.</p>
+            <a href="" class="btn">View Project</a>  
+        </div>
+</section>
+    <br>
+        <br>               
+            <br>
+                <br>
+                <br>
+            <br>               
+        <br>
+    <br> 
+     <section>
+        <div class="skills" id="skills">
+                <h1 style="color: #6c3082;">My <span style="font-size: xxx-large;text-align: center; color: #6c3082;">Skills</span></h1>
+                <div class="skills-container">
+                    <div class="skill">
+                        <i class="bi bi-brush"></i>
+                        <h3>UI/GUI Design</h3>
+                        <p>Digital interface in which a user interacts with graphical components such as icons, buttons, and menus.</p>
+    </div>
+                    <div class="skill">
+                        <i class="bi bi-code-slash"></i>
+                         <H3>Web Development</H3>
+                         <p>Proficient in HTML, CSS, PYTHON. The process of building, programming, and maintaining websites and web applications.</p>
+    </div>
+                    <div class="skill">
+                         <i class="bi bi-database"></i>
+                         <h3>Database Management</h3>
+                         <p>Store collections of tables and organize structured sets of data in a tabular columns-and-rows format. </p>
+    </div>
+        </div>
+            </section>
+<br>
+    <br>
+        <br>
+            <br>
+        <br>
+        <section id="Contact" class="Contact">
+        <div class="form-container">
+            <h4 style="color: black ; font-size: xx-large; margin-top: 30px;">Get in Touch</h4>
+            <br>
+            <form action="https://api.web3forms.com/submit" method="POST">
+            
+                <input type="hidden" name="access_key" value="dc041395-3828-493a-b1d4-28a5d767b0c0" />
+               
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+            <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            <br>
+                <button type="submit">Send Message</button>
+            <br>
+            <label for="email">angelielarioque20@gmail.com</label>
+            <label for="contact number">+9278741086</label>
+            <label for="address">Paliparan 3, Dasmarinas Cavite</label>
+            </form>
+        </div>
+</section>
+</body>
+</html>
